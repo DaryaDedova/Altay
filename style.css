@@ -1,0 +1,788 @@
+* {
+  margin: 0;
+  font-family: 'marmeladregular';
+  box-sizing: border-box;
+}
+header {
+  height: 700px;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+header > img {
+  width: 100%;
+  height: 700px;
+  grid-row: 1;
+  position: absolute;
+}
+header .navTitle {
+  grid-row: 1;
+  z-index: 10;
+}
+header .navTitle .nav-bar {
+  display: grid;
+  grid-template-columns: 1fr 1fr 3fr 1fr 1fr;
+  padding: 0 50px;
+  font-size: 18pt;
+}
+header .navTitle .nav-bar a {
+  text-decoration: none;
+  color: #626262;
+  justify-self: center;
+  align-self: center;
+}
+header .navTitle .nav-bar a:hover {
+  border-bottom: 2px solid rgba(74, 143, 196, 0.696);
+}
+header .navTitle .nav-bar .mountains-icon {
+  justify-self: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 20px;
+  text-transform: uppercase;
+}
+header .navTitle .nav-bar .mountains-icon img {
+  width: 100px;
+  height: 100px;
+  justify-self: end;
+}
+header .navTitle .title {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 80px;
+  gap: 10px;
+}
+header .navTitle .title h1 {
+  margin: 0;
+  font-size: 120pt;
+  justify-self: center;
+}
+header .navTitle .title p {
+  font-size: 16pt;
+  padding-bottom: 20px;
+  justify-self: center;
+}
+header .navTitle .title .but-1 {
+  border: none;
+  text-transform: uppercase;
+  border-radius: 15px;
+  padding: 15px 7px;
+  color: white;
+  text-align: center;
+  width: 150px;
+  justify-self: center;
+}
+header .navTitle .menu {
+  display: none;
+}
+main .se1 {
+  padding: 0 50px;
+  padding-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+main .se1 .infoCorp {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+main .se1 .infoCorp h2 {
+  font-size: 50pt;
+}
+main .se1 .infoCorp .textOne {
+  font-size: 16pt;
+}
+main .se1 .infoCorp .textOne span {
+  font-weight: bold;
+}
+main .se1 .infoCorp .textTwo {
+  font-size: 16pt;
+  font-weight: bold;
+}
+main .se1 .infoCorp .advCorp {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 40px;
+  justify-self: center;
+  margin-top: 20px;
+}
+main .se1 .infoCorp .advCorp .advantages {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+main .se1 .infoCorp .advCorp .advantages p {
+  font-size: 14pt;
+  text-align: center;
+}
+main .se1 .infoCorp .advCorp .advantages .nameAdv {
+  font-size: 18pt;
+  font-weight: bold;
+  text-align: center;
+}
+main .se1 .infoCorp .advCorp .advantages div {
+  padding: 20px;
+  justify-self: center;
+}
+main .se1 .infoCorp .advCorp .advantages div:hover {
+  cursor: pointer;
+}
+main .se1 .infoCorp .advCorp .advantages div img {
+  width: 90px;
+  height: 90px;
+}
+main .se2 {
+  width: 100%;
+  margin-bottom: 100px;
+}
+main .se2 img {
+  width: 100%;
+  height: 600px;
+}
+main .se3 {
+  padding: 0 50px;
+  margin-bottom: 100px;
+}
+main .se3 .tripTo {
+  padding-top: 30px;
+  display: grid;
+  width: 80%;
+  grid-template-columns: repeat(4, 1fr);
+  font-size: 16pt;
+}
+main .se3 .tripTo div {
+  padding: 10px 15px;
+  justify-self: center;
+  align-self: center;
+  border-radius: 40px;
+  box-sizing: border-box;
+  border: 2px solid black;
+}
+main .se3 .tripTo div:hover {
+  color: rgba(74, 143, 196, 0.696);
+  border: 2px solid rgba(74, 143, 196, 0.696);
+  cursor: pointer;
+}
+main .se3 .cards {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+main .se3 .cards .card_1 {
+  box-sizing: border-box;
+  background-color: rgba(74, 151, 210, 0.184);
+  border-radius: 30px;
+}
+main .se3 .cards .card_1 .cardImg {
+  display: flex;
+  justify-content: center;
+}
+main .se3 .cards .card_1 .cardImg img {
+  padding: 10px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  width: 100%;
+  height: 300px;
+}
+main .se3 .cards .card_1 .cardInfo {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  font-size: 14pt;
+}
+main .se3 .cards .card_1 .cardInfo .card_name {
+  justify-self: center;
+  font-size: 16pt;
+  font-weight: bold;
+}
+main .se3 .cards .card_1 .cardInfo .card_time {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+main .se3 .cards .card_1 .cardInfo .card_time span,
+main .se3 .cards .card_1 .cardInfo .card_time p {
+  align-self: center;
+}
+main .se3 .cards .card_1 .cardInfo .card_aboutTour {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+main .se3 .cards .card_1 .cardInfo .card_aboutTour span,
+main .se3 .cards .card_1 .cardInfo .card_aboutTour p {
+  align-self: start;
+}
+main .se3 .cards .card_1 .cardInfo .card_btn {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-self: center;
+  margin-top: 20px;
+  width: 100%;
+  gap: 10px;
+}
+main .se3 .cards .card_1 .cardInfo .card_btn .but-2 {
+  border: none;
+  text-transform: uppercase;
+  border-radius: 15px;
+  color: white;
+  text-align: center;
+  width: 150px;
+}
+main .se3 .cards .card_1 .cardInfo .card_btn a {
+  justify-self: start;
+}
+main .se3 .cards .card_1 .cardInfo .card_btn .price {
+  justify-self: end;
+  display: flex;
+  flex-direction: column;
+}
+main .se3 .cards .card_1 .cardInfo .card_btn .price .bold {
+  font-weight: bold;
+}
+main .se3 .cards .card_1 .cardInfo .card_btn .price .fSize {
+  font-size: 12pt;
+}
+main .se3 .cards .card_1 .cardInfo .modal_one .modal-content {
+  display: flex;
+  flex-direction: column;
+}
+main .se3 .cards .card_1 .cardInfo .modal_one .modal-content h4 {
+  text-align: center;
+}
+main .se3 .cards .card_1 .cardInfo .modal_one .modal-content .img_modal_one {
+  width: 80%;
+  box-shadow: 0 0 10px 2px grey;
+  margin: 20px auto 0 auto;
+}
+main .se3 .cards .card_1 .cardInfo .modal_one .modal-content .img_modal_one img {
+  width: 100%;
+}
+main .se3 .cards .card_1 .cardInfo .modal_two .modal-content {
+  display: flex;
+  flex-direction: column;
+}
+main .se3 .cards .card_1 .cardInfo .modal_two .modal-content h4 {
+  text-align: center;
+}
+main .se3 .cards .card_1 .cardInfo .modal_two .modal-content .img_modal_two {
+  width: 80%;
+  box-shadow: 0 0 10px 2px grey;
+  margin: 20px auto 0 auto;
+}
+main .se3 .cards .card_1 .cardInfo .modal_two .modal-content .img_modal_two img {
+  width: 100%;
+}
+main .se3 .cards .card_1 .cardInfo .modal_three .modal-content {
+  display: flex;
+  flex-direction: column;
+}
+main .se3 .cards .card_1 .cardInfo .modal_three .modal-content h4 {
+  text-align: center;
+}
+main .se3 .cards .card_1 .cardInfo .modal_three .modal-content .img_modal_three {
+  width: 80%;
+  box-shadow: 0 0 10px 2px grey;
+  margin: 20px auto 0 auto;
+}
+main .se3 .cards .card_1 .cardInfo .modal_three .modal-content .img_modal_three img {
+  width: 100%;
+}
+main .se3 .carouselCard {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+}
+main .se3 .carouselCard .icon-chevron-left1,
+main .se3 .carouselCard .icon-chevron-right1 {
+  font-size: 18pt;
+  cursor: pointer;
+}
+main .se3 .carouselCard .dot1,
+main .se3 .carouselCard .dot2,
+main .se3 .carouselCard .dot3 {
+  width: 8px;
+  height: 8px;
+  border: 1px solid black;
+  border-radius: 50%;
+  cursor: pointer;
+}
+main .se3 .carouselCard .dot1:hover,
+main .se3 .carouselCard .dot2:hover,
+main .se3 .carouselCard .dot3:hover {
+  box-shadow: 0px 0px 1px 1px grey;
+  width: 10px;
+  height: 10px;
+  background-color: black;
+}
+main .se4 {
+  padding: 0 50px;
+  margin-bottom: 150px;
+}
+main .se4 .sale {
+  width: 80%;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin: auto;
+  box-shadow: 0px 0px 10px 1px #7ca1bd;
+  background-color: rgba(74, 151, 210, 0.184);
+}
+main .se4 .sale img {
+  width: 350px;
+  height: 250px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+main .se4 .sale .saleFriends {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+main .se4 .sale .saleFriends .sale10 {
+  font-size: 30pt;
+  font-weight: bold;
+  margin: auto;
+}
+main .se4 .sale .saleFriends .saleTour {
+  font-size: 16pt;
+}
+main .Paral img {
+  width: 100%;
+  height: 1100px;
+}
+main .se5 {
+  margin-top: 100px;
+  width: 100%;
+  margin-bottom: 150px;
+}
+main .se5 h2 {
+  padding: 0 50px;
+}
+main .se5 .gal_se5 {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+main .se5 .gal_se5 .se5_stars {
+  justify-self: center;
+  margin-bottom: 20px;
+  font-size: 16pt;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+main .se5 .gal_se5 .se5_stars p {
+  align-self: center;
+}
+main .se5 .gal_se5 .se5_stars img {
+  width: 60px;
+  height: 60px;
+}
+main .se5 .gal_se5 .img_se5 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+main .se5 .gal_se5 .img_se5 img {
+  width: 100%;
+  height: 400px;
+}
+main .se6 {
+  padding: 0 50px;
+  margin-bottom: 150px;
+}
+main .se6 .main_se6 {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+main .se6 .main_se6 .feedback {
+  justify-self: center;
+  text-align: center;
+}
+main .se6 .main_se6 .feedback p {
+  font-size: 14pt;
+}
+main .se6 .main_se6 .feedback div {
+  font-size: 14pt;
+}
+main .se6 .main_se6 .feedback .icon-edit-3 {
+  font-size: 20pt;
+}
+main .se6 .main_se6 .contacts {
+  background-color: rgba(74, 143, 196, 0.696);
+  padding: 20px;
+  border-radius: 50px;
+}
+main .se6 .main_se6 .contacts h4 {
+  text-align: center;
+}
+main .se6 .main_se6 .contacts p {
+  text-align: center;
+}
+main .se6 .main_se6 .contacts .contacts_se6 {
+  display: flex;
+  flex-direction: column;
+}
+main .se6 .main_se6 .contacts .contacts_se6 .contacts_se6_img,
+main .se6 .main_se6 .contacts .contacts_se6 .contacts_se6_info,
+main .se6 .main_se6 .contacts .contacts_se6 .contacts_se6_address {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 15px 0 0px 0;
+  align-self: center;
+}
+main .se6 .main_se6 .contacts .contacts_se6 .contacts_se6_img p,
+main .se6 .main_se6 .contacts .contacts_se6 .contacts_se6_info p,
+main .se6 .main_se6 .contacts .contacts_se6 .contacts_se6_address p {
+  align-self: center;
+}
+main .se6 .main_se6 .contacts .contacts_se6 img {
+  width: 30px;
+  height: 30px;
+}
+main footer {
+  border-top: 2px solid rgba(74, 143, 196, 0.696);
+  padding: 30px 0;
+}
+main footer .foot_altex {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+main footer .foot_altex .foot_al {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: center;
+}
+main footer .foot_altex .foot_al img {
+  width: 50px;
+  height: 50px;
+}
+main footer .foot_altex .messengers {
+  padding: 10px 0;
+  margin: auto;
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: space-between;
+}
+main footer .foot_altex .messengers a:hover {
+  background-color: rgba(74, 143, 196, 0.696);
+  border-radius: 50px;
+  padding: 5px;
+}
+main footer .foot_altex .messengers img {
+  width: 40px;
+  height: 40px;
+}
+main footer p {
+  padding-right: 10px;
+  font-size: 12pt;
+  text-align: end;
+}
+main footer a {
+  display: flex;
+  padding-right: 10px;
+  font-size: 12pt;
+  justify-content: end;
+}
+@media screen and (min-width: 600px) and (max-width: 920px) {
+  header {
+    height: 500px;
+    width: 100%;
+  }
+  header > img {
+    height: 500px;
+  }
+  header .navTitle .nav-bar {
+    font-size: 16pt;
+  }
+  header .navTitle .nav-bar .mountains-icon img {
+    width: 80px;
+    height: 80px;
+  }
+  header .navTitle .title {
+    margin-top: 40px;
+  }
+  header .navTitle .title p {
+    font-size: 14pt;
+    padding-bottom: 10px;
+  }
+  main .se1 {
+    padding-top: 20px;
+  }
+  main .se1 .infoCorp h2 {
+    font-size: 40pt;
+  }
+  main .se1 .infoCorp .textOne {
+    font-size: 14pt;
+  }
+  main .se1 .infoCorp .textTwo {
+    font-size: 14pt;
+  }
+  main .se1 .infoCorp .advCorp {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  main .se1 .infoCorp .advCorp .advantages .nameAdv {
+    font-size: 16pt;
+  }
+  main .se1 .infoCorp .advCorp .advantages_one {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+  }
+  main .se1 .infoCorp .advCorp .advantages_two {
+    grid-column: 3 / span 2;
+    grid-row: 1;
+  }
+  main .se1 .infoCorp .advCorp .advantages_three {
+    grid-column: 5 / span 2;
+    grid-row: 1;
+  }
+  main .se1 .infoCorp .advCorp .advantages_four {
+    grid-column: 1 / span 3;
+    grid-row: 2;
+  }
+  main .se1 .infoCorp .advCorp .advantages_five {
+    grid-column: 4 / span 3;
+    grid-row: 2;
+  }
+  main .se2 {
+    margin-top: 30px;
+  }
+  main .se2 img {
+    height: 500px;
+  }
+  main .se3 {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  main .se3 .tripTo {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-between;
+  }
+  main .se3 .tripTo .d-none {
+    display: none;
+  }
+  main .se3 .cards {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    margin: 30px auto;
+  }
+  main .se3 .cards .card_1 .cardInfo .modal.modal-fixed-footer {
+    height: 40%;
+  }
+  main .se4 {
+    padding: 0 50px;
+    display: flex;
+  }
+  main .se4 .sale {
+    justify-content: center;
+    width: 100%;
+    height: 300px;
+  }
+  main .se4 .sale img {
+    width: 250px;
+    height: 100%;
+  }
+  main .se4 .sale .saleFriends .sale10 {
+    font-size: 15pt;
+  }
+  main .se4 .sale .saleFriends .saleTour {
+    font-size: 12pt;
+  }
+  main .Paral img {
+    height: 1000px;
+  }
+  main .se5 .gal_se5 {
+    width: 100%;
+    display: grid;
+  }
+  main .se5 .gal_se5 .img_se5 {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  main .se5 .gal_se5 .img_se5 .gal_se5_img_two {
+    display: none;
+  }
+  main .se5 .gal_se5 .img_se5 .gal_se5_img_four {
+    display: none;
+  }
+  main footer p {
+    margin: 10px 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  header {
+    height: 500px;
+  }
+  header > img {
+    height: 500px;
+  }
+  header .navTitle .nav-bar {
+    grid-template-columns: 1fr;
+    font-size: 16pt;
+  }
+  header .navTitle .nav-bar a {
+    display: none;
+  }
+  header .navTitle .nav-bar .mountains-icon img {
+    width: 60px;
+    height: 60px;
+  }
+  header .navTitle .title h1 {
+    font-size: 70pt;
+  }
+  header .navTitle .title p {
+    font-size: 14pt;
+  }
+  header .navTitle .title .but-1 {
+    padding: 12px 15px;
+    font-size: 10pt;
+  }
+  header .navTitle .menu {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+  }
+  header .navTitle .menu img {
+    width: 40px;
+    height: 40px;
+  }
+  main .se1 .infoCorp {
+    grid-template-columns: 1fr;
+  }
+  main .se1 .infoCorp h2 {
+    font-size: 40pt;
+  }
+  main .se1 .infoCorp .textOne {
+    font-size: 14pt;
+  }
+  main .se1 .infoCorp .textTwo {
+    font-size: 14pt;
+  }
+  main .se1 .infoCorp .advCorp {
+    grid-template-columns: 1fr;
+  }
+  main .se1 .infoCorp .advCorp .advantages {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  main .se1 .infoCorp .advCorp .advantages p {
+    font-size: 12pt;
+  }
+  main .se1 .infoCorp .advCorp .advantages .nameAdv {
+    font-size: 16pt;
+  }
+  main .se1 .infoCorp .advCorp .advantages div {
+    padding: 18px;
+  }
+  main .se1 .infoCorp .advCorp .advantages div img {
+    width: 70px;
+    height: 70px;
+  }
+  main .se2 img {
+    height: 400px;
+  }
+  main .se3 .tripTo {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 14pt;
+  }
+  main .se3 .tripTo .d-none,
+  main .se3 .tripTo .d-none-2 {
+    display: none;
+  }
+  main .se3 .cards {
+    grid-template-columns: 1fr;
+    justify-self: center;
+  }
+  main .se3 .cards .card_1 .cardInfo .modal.modal-fixed-footer {
+    height: 50%;
+  }
+  main .se4 .sale {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+  }
+  main .se4 .sale img {
+    width: 100%;
+    height: 250px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+  }
+  main .se4 .sale .saleFriends .sale10 {
+    text-align: center;
+    font-size: 20pt;
+  }
+  main .se4 .sale .saleFriends .saleTour {
+    margin: 10px 10px 15px 10px;
+    text-align: justify;
+    font-size: 14pt;
+  }
+  main .se5 .gal_se5 .se5_stars {
+    width: 80%;
+    font-size: 12pt;
+  }
+  main .se5 .gal_se5 .se5_stars img {
+    width: 40px;
+    height: 40px;
+  }
+  main .se5 .gal_se5 .img_se5 {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  main .se5 .gal_se5 .img_se5 img {
+    width: 100%;
+  }
+  main .se5 .gal_se5 .img_se5 .gal_se5_img_two,
+  main .se5 .gal_se5 .img_se5 .gal_se5_img_three,
+  main .se5 .gal_se5 .img_se5 .gal_se5_img_four {
+    display: none;
+  }
+  main .se6 {
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+  }
+  main .se6 .main_se6 {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+  main .se6 .main_se6 .contacts {
+    background-color: rgba(74, 143, 196, 0.696);
+    padding: 20px;
+    border-radius: 50px;
+  }
+  main .se6 .main_se6 .contacts .contacts_se6 img {
+    width: 20px;
+    height: 20px;
+  }
+  main footer p {
+    margin: 20px 0px;
+  }
+}
